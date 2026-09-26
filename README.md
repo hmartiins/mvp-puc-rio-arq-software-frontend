@@ -66,11 +66,14 @@ Aplicação em <http://localhost:8081>.
 O `docker-compose.yml` na raiz deste repositório sobe o sistema inteiro. Ele constrói a API a partir do repositório vizinho, então clone os dois lado a lado:
 
 ```bash
-git clone https://github.com/hmartiins/mvp-puc-rio-arq-software-frontend
-git clone https://github.com/hmartiins/mvp-puc-rio-arq-software-backend
-cd mvp-puc-rio-arq-software-backend
+git clone https://github.com/hmartiins/mvp-puc-rio-arq-software-frontend cardapio-semanal-front
+git clone https://github.com/hmartiins/mvp-puc-rio-arq-software-backend cardapio-semanal-api
+cd cardapio-semanal-front
 docker compose up --build
 ```
+
+> Os nomes de destino (`cardapio-semanal-front` / `cardapio-semanal-api`) importam: o
+> `docker-compose.yml` constrói a API a partir de `../cardapio-semanal-api`.
 
 | Serviço | URL |
 |---|---|

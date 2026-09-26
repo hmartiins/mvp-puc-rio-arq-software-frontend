@@ -1,8 +1,9 @@
 # Sobe o sistema inteiro: Front (Nginx) + API (Spring Boot) + PostgreSQL.
 #
-# A API mora em outro repositorio. Clone os dois lado a lado:
-#   git clone https://github.com/SEU-USUARIO/cardapio-semanal-front
-#   git clone https://github.com/SEU-USUARIO/cardapio-semanal-api
+# A API mora em outro repositorio. Clone os dois lado a lado, usando estes nomes de
+# destino — o servico `api` abaixo builda a partir de ../cardapio-semanal-api:
+#   git clone https://github.com/hmartiins/mvp-puc-rio-arq-software-frontend cardapio-semanal-front
+#   git clone https://github.com/hmartiins/mvp-puc-rio-arq-software-backend cardapio-semanal-api
 # e rode `docker compose up --build` a partir deste diretorio.
 
 services:
