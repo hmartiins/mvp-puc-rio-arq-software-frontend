@@ -4,7 +4,7 @@ Interface web para planejar o cardápio da semana (7 dias × 3 refeições) e ge
 
 Este é o componente **principal** do Cenário 1.1: ele consome **apenas** a API Back-End própria e nunca chama a TheMealDB diretamente.
 
-- Repositório da API Back-End: <https://github.com/SEU-USUARIO/cardapio-semanal-api>
+- Repositório da API Back-End: <https://github.com/hmartiins/mvp-puc-rio-arq-software-backend>
 
 ## Arquitetura
 
@@ -66,9 +66,9 @@ Aplicação em <http://localhost:8081>.
 O `docker-compose.yml` na raiz deste repositório sobe o sistema inteiro. Ele constrói a API a partir do repositório vizinho, então clone os dois lado a lado:
 
 ```bash
-git clone https://github.com/SEU-USUARIO/cardapio-semanal-front
-git clone https://github.com/SEU-USUARIO/cardapio-semanal-api
-cd cardapio-semanal-front
+git clone https://github.com/hmartiins/mvp-puc-rio-arq-software-frontend
+git clone https://github.com/hmartiins/mvp-puc-rio-arq-software-backend
+cd mvp-puc-rio-arq-software-backend
 docker compose up --build
 ```
 
